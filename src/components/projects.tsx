@@ -44,9 +44,7 @@ export default function Projects() {
   const rest = projects.filter((p) => !p.featured);
 
   return (
-    <section id="projects" className="py-28 relative overflow-hidden">
-      <div className="absolute left-1/4 top-1/4 w-[500px] h-[500px] rounded-full blur-3xl pointer-events-none"
-        style={{ background: "radial-gradient(circle, rgba(99,107,47,0.06) 0%, transparent 70%)" }} />
+    <section id="projects" className="py-28 relative overflow-hidden bg-background">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
@@ -54,14 +52,11 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-20"
+          className="mb-20 text-center"
         >
-          <div className="flex items-center gap-4 mb-4">
-            <span className="section-number">04.</span>
-            <div className="h-px flex-1 bg-gradient-to-r from-primary/50 to-transparent" />
-          </div>
-          <h2 className="text-4xl sm:text-5xl font-black">
-            Featured <span className="gradient-text">Projects</span>
+          <h2 className="text-4xl sm:text-5xl font-black text-foreground inline-block relative">
+            Projects
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary"></div>
           </h2>
         </motion.div>
 
@@ -133,7 +128,7 @@ export default function Projects() {
                   <div className="flex items-start justify-between mb-3">
                     <Link href={`/projects/${project.slug}`}>
                       <h3 className="text-xl font-bold group-hover:text-transparent transition-all duration-300 cursor-pointer"
-                        style={{ background: `linear-gradient(135deg, ${project.accentColor}, #D4DE95)`,
+                        style={{ background: `linear-gradient(135deg, ${project.accentColor}, hsl(var(--accent)))`,
                           WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}
                       >
                         {project.title}
@@ -231,8 +226,8 @@ export default function Projects() {
             whileTap={{ scale: 0.96 }}
             className="inline-flex items-center gap-3 px-10 py-4 rounded-2xl font-semibold text-white transition-all"
             style={{
-              background: "linear-gradient(135deg, #636B2F, #D4DE95)",
-              boxShadow: "0 0 25px rgba(99, 107, 47, 0.3)",
+              background: "linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)))",
+              boxShadow: "0 0 25px var(--glow-primary)",
             }}
           >
             <Github className="w-5 h-5" />

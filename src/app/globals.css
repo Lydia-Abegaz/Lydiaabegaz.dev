@@ -37,34 +37,34 @@
 }
 
 .dark {
-  /* Dark Mode — Forest Green Palette */
-  --background: 68 25% 10%;
-  --foreground: 68 50% 95%;
-  --card: 68 25% 12%;
-  --card-foreground: 68 50% 95%;
-  --popover: 68 25% 12%;
-  --popover-foreground: 68 50% 95%;
+  /* Dark Mode — Dark Theme with Orange Accents */
+  --background: 220 20% 8%;
+  --foreground: 220 15% 95%;
+  --card: 220 20% 12%;
+  --card-foreground: 220 15% 95%;
+  --popover: 220 20% 12%;
+  --popover-foreground: 220 15% 95%;
 
-  --primary: 68 40% 35%;
-  --primary-foreground: 68 50% 95%;
+  --primary: 25 95% 53%;
+  --primary-foreground: 220 20% 8%;
 
-  --secondary: 68 25% 67%;
-  --secondary-foreground: 68 25% 10%;
+  --secondary: 220 15% 25%;
+  --secondary-foreground: 220 15% 95%;
 
-  --accent: 68 50% 73%;
-  --accent-foreground: 68 25% 10%;
+  --accent: 25 85% 58%;
+  --accent-foreground: 220 20% 8%;
 
-  --muted: 68 20% 20%;
-  --muted-foreground: 68 25% 67%;
+  --muted: 220 15% 18%;
+  --muted-foreground: 220 10% 65%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --border: 68 30% 25%;
-  --input: 68 20% 20%;
-  --ring: 68 40% 35%;
+  --border: 220 15% 18%;
+  --input: 220 15% 18%;
+  --ring: 25 95% 53%;
 
-  --glow-primary: rgba(99, 107, 47, 0.4);
-  --glow-secondary: rgba(186, 192, 149, 0.4);
-  --glow-accent: rgba(212, 222, 149, 0.4);
+  --glow-primary: rgba(251, 146, 60, 0.2);
+  --glow-secondary: rgba(254, 215, 170, 0.15);
+  --glow-accent: rgba(249, 115, 22, 0.3);
 }
 
 * {

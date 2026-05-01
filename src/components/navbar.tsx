@@ -2,19 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "@/components/theme-toggle";
+import LALogo from "@/components/la-logo";
 
 const navItems = [
   { name: "Home",       href: "#home" },
   { name: "About",      href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Skills",     href: "#skills" },
   { name: "Projects",   href: "#projects" },
-  { name: "Contact",    href: "#contact" },
-  { name: "Blog",       href: "/blog" },
+  { name: "Contacts",   href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -70,24 +68,11 @@ export default function Navbar() {
               onClick={() => handleNav("#home")}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 group"
+              className="flex items-center gap-3 group"
             >
-              {/* Animated logo mark */}
-              <div className="relative w-9 h-9 flex items-center justify-center">
-                <motion.div
-                  className="absolute inset-0 rounded-xl"
-                  style={{
-                    background: "linear-gradient(135deg, var(--primary), var(--secondary))",
-                  }}
-                  animate={{ rotate: [0, 360] }}
-                  transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
-                />
-                <div className="absolute inset-[2px] bg-background rounded-[10px] flex items-center justify-center">
-                  <span className="text-sm font-bold text-foreground">LA</span>
-                </div>
-              </div>
+              <LALogo size="md" animated={true} />
               <span className="text-lg font-bold text-foreground hidden sm:block">
-                Lidia<span className="text-foreground/50">.</span>
+                Lidia<span className="text-foreground/50"> Aliso</span>
               </span>
             </motion.button>
 
@@ -157,24 +142,6 @@ export default function Navbar() {
             {/* CTA + Theme Toggle */}
             <div className="flex items-center gap-3">
               <ThemeToggle />
-              <motion.a
-                href="/resume.pdf"
-                download
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="hidden md:flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all glass-strong"
-                style={{ border: "1px solid rgba(255,255,255,0.12)" }}
-                onClick={() => {
-                  if (typeof window !== "undefined" && (window as any).va) {
-                    (window as any).va("event", { name: "resume_download" });
-                  }
-                }}
-              >
-                <Download className="w-4 h-4" />
-                Resume
-              </motion.a>
               <motion.button
                 onClick={() => handleNav("#contact")}
                 initial={{ opacity: 0 }}
@@ -183,8 +150,8 @@ export default function Navbar() {
                 whileTap={{ scale: 0.95 }}
                 className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-all"
                 style={{
-                  background: "linear-gradient(135deg, #636B2F, #3D4127)",
-                  boxShadow: "0 0 20px rgba(99, 107, 47, 0.35)",
+                  background: "linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)))",
+                  boxShadow: "0 0 20px var(--glow-primary)",
                 }}
               >
                 Let&apos;s Talk ✦
@@ -230,7 +197,7 @@ export default function Navbar() {
                     className="text-3xl font-bold py-4 transition-all"
                     style={{
                       color: isActive ? "transparent" : "hsl(220 20% 60%)",
-                      background: isActive ? "linear-gradient(135deg, #D4DE95, #636B2F)" : "none",
+                      background: isActive ? "linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)))" : "none",
                       WebkitBackgroundClip: isActive ? "text" : "none",
                       WebkitTextFillColor: isActive ? "transparent" : undefined,
                     }}
@@ -247,7 +214,7 @@ export default function Navbar() {
                     className="text-3xl font-bold py-4 transition-all" 
                     style={{ 
                       color: isActive ? "transparent" : "hsl(220 20% 60%)",
-                      background: isActive ? "linear-gradient(135deg, #D4DE95, #636B2F)" : "none",
+                      background: isActive ? "linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)))" : "none",
                       WebkitBackgroundClip: isActive ? "text" : "none",
                       WebkitTextFillColor: isActive ? "transparent" : undefined,
                     }}

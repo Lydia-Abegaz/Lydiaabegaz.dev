@@ -20,8 +20,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "How I built FairChain — a blockchain-based verification platform that helps Ethiopian factories prove compliance with international standards using Soroban smart contracts.",
     readTime: "8 min read",
     emoji: "🔗",
-    accent: "#636B2F",
-    glow: "rgba(99,107,47,0.25)",
+    accent: "hsl(25 95% 53%)",
+    glow: "rgba(251, 146, 60, 0.25)",
     content: `## Why Blockchain for Supply Chains?
 
 Global supply chains are complex, opaque, and often exploitative. Ethiopian factories exporting textiles and agricultural products face a trust gap — international buyers want proof of ethical practices, but traditional certifications are expensive and easy to forge.
@@ -72,8 +72,8 @@ I plan to extend FairChain with multi-signature compliance approvals and integra
     excerpt: "A behind-the-scenes look at how Team Phoenix built a comprehensive hospitality platform for Kuriftu Resorts in just 48 hours — and placed as finalists.",
     readTime: "6 min read",
     emoji: "🏨",
-    accent: "#BAC095",
-    glow: "rgba(186,192,149,0.25)",
+    accent: "hsl(25 85% 58%)",
+    glow: "rgba(254, 215, 170, 0.25)",
     content: `## The Challenge
 
 The Hospitality Hackathon 2026 posed a clear challenge: build a digital solution that enhances the guest experience at Kuriftu Resorts. We had 48 hours.
@@ -125,8 +125,8 @@ We placed as finalists. The judges highlighted our polished UI, working backend 
     excerpt: "A practical guide to understanding when to use Server Components vs Client Components in Next.js 14, with real performance benchmarks from my portfolio.",
     readTime: "7 min read",
     emoji: "⚡",
-    accent: "#D4DE95",
-    glow: "rgba(212,222,149,0.25)",
+    accent: "hsl(25 90% 65%)",
+    glow: "rgba(253, 186, 116, 0.25)",
     content: `## The Server Component Revolution
 
 Next.js 14's App Router defaults to Server Components — and for good reason. Server Components render on the server, send zero JavaScript to the client, and dramatically improve performance metrics.

@@ -4,10 +4,8 @@ import { useState, useCallback } from "react";
 import { AnimatePresence } from "framer-motion";
 import LoadingScreen from "@/components/loading-screen";
 import Navbar from "@/components/navbar";
-import Hero from "@/components/hero";
-import About from "@/components/about";
-import Experience from "@/components/experience";
-import Skills from "@/components/skills";
+import HeroNew from "@/components/hero-new";
+import Services from "@/components/services";
 import Projects from "@/components/projects";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
@@ -25,13 +23,10 @@ export default function HomeContent() {
 
       {!isLoading && (
         <>
-          <ParticleBackground />
           <Navbar />
           <main className="relative z-10">
-            <Hero />
-            <About />
-            <Experience />
-            <Skills />
+            <HeroNew />
+            <Services />
             <Projects />
             <Contact />
           </main>

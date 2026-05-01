@@ -17,6 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://lydia-abegaz-dev.vercel.app'),
   title: "Lidia Aliso | Full Stack & Blockchain Developer",
   description:
     "Full-stack and blockchain developer from Ethiopia. Crafting digital experiences with React, Next.js, Node.js, and Soroban smart contracts.",

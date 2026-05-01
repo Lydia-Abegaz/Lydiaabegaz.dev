@@ -18,8 +18,8 @@ export const experiences: Experience[] = [
     description:
       "Led development of the Kuriftu Hospitality Platform as part of Team Phoenix. Placed as finalists for creating a comprehensive hospitality solution. Built modern web technologies to enhance guest experiences and streamline resort operations.",
     skills: ["Hackathon", "Team Leadership", "Web Dev", "Hospitality Tech"],
-    color: "#D4DE95",
-    glowColor: "rgba(212,222,149,0.2)",
+    color: "hsl(25 90% 65%)",
+    glowColor: "rgba(253, 186, 116, 0.2)",
   },
   {
     title: "Gara Innovation Bootcamp",
@@ -29,8 +29,8 @@ export const experiences: Experience[] = [
     description:
       "Completed intensive innovation bootcamp. Engineered a Devotionals API and earned a certificate of completion. Focused on backend systems and innovation frameworks.",
     skills: ["Backend Dev", "API Design", "Innovation", "API Security"],
-    color: "#636B2F",
-    glowColor: "rgba(99,107,47,0.2)",
+    color: "hsl(25 95% 53%)",
+    glowColor: "rgba(251, 146, 60, 0.2)",
   },
   {
     title: "Hackathon Finalist — Stellar EA × GDG AASTU",
@@ -40,19 +40,19 @@ export const experiences: Experience[] = [
     description:
       "Powered by Stellar East Africa in collaboration with GDG AASTU On Campus. Developed FairChain — a blockchain-based ethical supply chain platform using Soroban smart contracts. Placed as a hackathon finalist for technical innovation.",
     skills: ["Soroban", "Stellar Blockchain", "Smart Contracts", "Rust"],
-    color: "#636B2F",
-    glowColor: "rgba(99,107,47,0.2)",
+    color: "hsl(25 95% 53%)",
+    glowColor: "rgba(251, 146, 60, 0.2)",
   },
   {
     title: "Full Stack Developer",
-    company: "Personal Project — QuizBirr",
+    company: "GitHub Portfolio Projects",
     location: "Addis Ababa, Ethiopia",
-    period: "2024",
+    period: "2024 — Present",
     description:
-      "Built QuizBirr, a mobile quiz application with real-money rewards. Developed the full-stack architecture including user authentication, quiz logic, and reward systems using modern web technologies.",
-    skills: ["TypeScript", "React Native", "Node.js", "MongoDB"],
-    color: "#BAC095",
-    glowColor: "rgba(186,192,149,0.2)",
+      "Building and maintaining multiple full-stack projects on GitHub, ranging from web applications to blockchain solutions. Continuously learning and implementing modern technologies.",
+    skills: ["React", "Next.js", "TypeScript", "Node.js", "Blockchain"],
+    color: "hsl(25 85% 58%)",
+    glowColor: "rgba(254, 215, 170, 0.2)",
   },
   {
     title: "Software Engineering Student",
@@ -62,7 +62,7 @@ export const experiences: Experience[] = [
     description:
       "Pursuing B.Sc in Software Engineering with strong foundations in programming, data structures, full-stack web development, AI/ML, and blockchain technologies.",
     skills: ["Java", "Python", "Data Structures", "Algorithms", "SE"],
-    color: "#3D4127",
-    glowColor: "rgba(61,65,39,0.2)",
+    color: "hsl(25 80% 45%)",
+    glowColor: "rgba(249, 115, 22, 0.2)",
   },
 ];

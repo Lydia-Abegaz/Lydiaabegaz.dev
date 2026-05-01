@@ -17,8 +17,8 @@ export const testimonials: Testimonial[] = [
     text: "Lidia was the backbone of our development team. Her ability to ship clean, working code under pressure is unreal. A true full-stack powerhouse.",
     stars: 5,
     gradient: "from-pale-lime to-sage",
-    accent: "#D4DE95",
-    glow: "rgba(212,222,149,0.15)",
+    accent: "hsl(25 90% 65%)",
+    glow: "rgba(253, 186, 116, 0.15)",
   },
   {
     name: "Stellar EA × GDG AASTU",
@@ -27,8 +27,8 @@ export const testimonials: Testimonial[] = [
     text: "Lidia picked up Soroban smart contracts faster than anyone in the cohort. Her FairChain project stood out for both its technical implementation and real-world impact.",
     stars: 5,
     gradient: "from-olive-green to-forest-dark",
-    accent: "#636B2F",
-    glow: "rgba(99,107,47,0.15)",
+    accent: "hsl(25 95% 53%)",
+    glow: "rgba(251, 146, 60, 0.15)",
   },
   {
     name: "AASTU Peer",
@@ -37,7 +37,7 @@ export const testimonials: Testimonial[] = [
     text: "Lidia always goes the extra mile. From algorithms to blockchain, she masters every domain she touches and always helps others along the way.",
     stars: 5,
     gradient: "from-sage to-olive-green",
-    accent: "#BAC095",
-    glow: "rgba(186,192,149,0.15)",
+    accent: "hsl(25 85% 58%)",
+    glow: "rgba(254, 215, 170, 0.15)",
   },
 ];

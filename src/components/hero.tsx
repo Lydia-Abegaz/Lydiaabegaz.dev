@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { ArrowDown, Download, Github, Linkedin, MessageCircle } from "lucide-react";
+import { ArrowDown, Github, Linkedin, MessageCircle } from "lucide-react";
 import { useRef } from "react";
 
 const socials = [
@@ -152,22 +152,6 @@ export default function Hero() {
               >
                 View My Work
                 <ArrowDown className="w-4 h-4" />
-              </motion.a>
-              <motion.a
-                href="/resume.pdf"
-                download
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.96 }}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-semibold transition-all glass-strong"
-                style={{ border: "1px solid rgba(255,255,255,0.12)" }}
-                onClick={() => {
-                  if (typeof window !== "undefined" && (window as any).va) {
-                    (window as any).va("event", { name: "hero_resume_download" });
-                  }
-                }}
-              >
-                <Download className="w-4 h-4" />
-                Download CV
               </motion.a>
             </motion.div>
 

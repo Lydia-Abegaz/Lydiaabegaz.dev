@@ -5,15 +5,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Linkedin, Github, MessageCircle, Award, CheckCircle2 } from "lucide-react";
 
 const contactInfo = [
-  { icon: Mail,         label: "Email",        value: "lydiaabegaz@gmail.com",    href: "mailto:lydiaabegaz@gmail.com", color: "#636B2F", glow: "rgba(99,107,47,0.2)" },
-  { icon: Phone,        label: "Phone",        value: "+251 927 197 935",          href: "tel:+251927197935",            color: "#BAC095", glow: "rgba(186,192,149,0.2)"  },
-  { icon: MapPin,       label: "Location",     value: "Addis Ababa, Ethiopia",     href: "#",                            color: "#D4DE95", glow: "rgba(212,222,149,0.2)" },
-  { icon: Award,        label: "Certificates", value: "View Certificates →",       href: "https://drive.google.com/drive/folders/1vub1QQV6uM7hiOzmwryP-AR63oRAhYvL?usp=sharing", color: "#3D4127", glow: "rgba(61,65,39,0.2)" },
+  { icon: Mail,         label: "Email",        value: "lydiaabegaz@gmail.com",    href: "mailto:lydiaabegaz@gmail.com", color: "hsl(var(--primary))", glow: "var(--glow-primary)" },
+  { icon: Phone,        label: "Phone",        value: "+251 927 197 935",          href: "tel:+251927197935",            color: "hsl(var(--accent))", glow: "var(--glow-secondary)"  },
+  { icon: MapPin,       label: "Location",     value: "Addis Ababa, Ethiopia",     href: "#",                            color: "hsl(var(--primary))", glow: "var(--glow-primary)" },
+  { icon: Award,        label: "Certificates", value: "View Certificates →",       href: "https://drive.google.com/drive/folders/1vub1QQV6uM7hiOzmwryP-AR63oRAhYvL?usp=sharing", color: "hsl(var(--accent))", glow: "var(--glow-secondary)" },
 ];
 
 const socialLinks = [
-  { icon: Linkedin,       href: "https://www.linkedin.com/in/lydia-abegaz",  label: "LinkedIn",  color: "hsl(201 100% 50%)" },
-  { icon: Github,         href: "https://github.com/Lydia-Abegaz",           label: "GitHub",    color: "hsl(220 20% 97%)"  },
+  { icon: Linkedin,       href: "https://www.linkedin.com/in/lydia-aliso",  label: "LinkedIn",  color: "hsl(201 100% 50%)" },
+  { icon: Github,         href: "https://github.com/Lydia-Aliso",           label: "GitHub",    color: "hsl(220 20% 97%)"  },
   { icon: MessageCircle,  href: "https://t.me/Truth_seeker9",                 label: "Telegram",  color: "hsl(200 90% 55%)"  },
 ];
 
@@ -53,7 +53,7 @@ export default function Contact() {
   const inputClass = (field: string) =>
     `w-full px-4 py-3.5 rounded-xl bg-background/50 outline-none transition-all duration-300 font-medium text-sm text-foreground placeholder:text-muted-foreground/50 ${
       focused === field
-        ? "border-primary/60 shadow-[0_0_0_3px_rgba(99,107,47,0.15)]"
+        ? "border-primary/60 shadow-[0_0_0_3px_hsl(var(--glow-primary))]"
         : "border-white/8 hover:border-white/15"
     }`;
 
@@ -61,9 +61,9 @@ export default function Contact() {
     <section id="contact" className="py-28 relative overflow-hidden">
       {/* BG blobs */}
       <div className="absolute right-0 top-0 w-[500px] h-[500px] rounded-full blur-3xl pointer-events-none"
-        style={{ background: "radial-gradient(circle, rgba(99,107,47,0.07) 0%, transparent 70%)" }} />
+        style={{ background: "radial-gradient(circle, rgba(251,146,60,0.07) 0%, transparent 70%)" }} />
       <div className="absolute left-0 bottom-0 w-[400px] h-[400px] rounded-full blur-3xl pointer-events-none"
-        style={{ background: "radial-gradient(circle, rgba(186,192,149,0.05) 0%, transparent 70%)" }} />
+        style={{ background: "radial-gradient(circle, rgba(254,215,170,0.05) 0%, transparent 70%)" }} />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}

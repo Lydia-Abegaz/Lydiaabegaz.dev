@@ -16,8 +16,8 @@ export const categories: SkillCategory[] = [
   {
     title: "Languages",
     emoji: "💻",
-    color: "#636B2F",
-    glow: "rgba(99,107,47,0.3)",
+    color: "hsl(25 95% 53%)",
+    glow: "rgba(251, 146, 60, 0.3)",
     skills: [
       { name: "JavaScript / TypeScript", level: 90, icon: "⚡" },
       { name: "Python",                  level: 85, icon: "🐍" },
@@ -28,8 +28,8 @@ export const categories: SkillCategory[] = [
   {
     title: "Web Development",
     emoji: "🌐",
-    color: "#D4DE95",
-    glow: "rgba(212,222,149,0.3)",
+    color: "hsl(25 90% 65%)",
+    glow: "rgba(253, 186, 116, 0.3)",
     skills: [
       { name: "React.js / Next.js",    level: 88, icon: "⚛️" },
       { name: "Node.js / Express",     level: 85, icon: "🟢" },
@@ -53,8 +53,8 @@ export const categories: SkillCategory[] = [
   {
     title: "Data Science & AI",
     emoji: "🧠",
-    color: "#BAC095",
-    glow: "rgba(186,192,149,0.3)",
+    color: "hsl(25 85% 58%)",
+    glow: "rgba(254, 215, 170, 0.3)",
     skills: [
       { name: "Machine Learning",      level: 75, icon: "🤖" },
       { name: "Pandas / NumPy",        level: 80, icon: "📊" },

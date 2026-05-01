@@ -79,6 +79,7 @@ export default function ParticleBackground() {
     }
 
     function spawnStar() {
+      if (!canvas) return;
       const edge = Math.floor(Math.random() * 4);
       let x = 0, y = 0, vx = 0, vy = 0;
       const speed = 3 + Math.random() * 5;
@@ -110,6 +111,7 @@ export default function ParticleBackground() {
 
     function draw() {
       tick++;
+      if (!canvas || !ctx) return;
       ctx!.clearRect(0, 0, canvas.width, canvas.height);
 
       // Aurora blobs

@@ -15,8 +15,8 @@ const links = [
 ];
 
 const socials = [
-  { icon: Github,        href: "https://github.com/Lydia-Abegaz",             label: "GitHub" },
-  { icon: Linkedin,      href: "https://www.linkedin.com/in/lydia-abegaz",    label: "LinkedIn" },
+  { icon: Github,        href: "https://github.com/Lydia-Aliso",             label: "GitHub" },
+  { icon: Linkedin,      href: "https://www.linkedin.com/in/lydia-aliso",    label: "LinkedIn" },
   { icon: MessageCircle, href: "https://t.me/Truth_seeker9",                  label: "Telegram" },
 ];
 
@@ -45,7 +45,7 @@ export default function Footer() {
               <div className="relative w-10 h-10">
                 <motion.div
                   className="absolute inset-0 rounded-xl"
-                  style={{ background: "linear-gradient(135deg, #636B2F, #BAC095)" }}
+                  style={{ background: "linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)))" }}
                   animate={{ rotate: 360 }}
                   transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
                 />
@@ -97,7 +97,7 @@ export default function Footer() {
                       className="group flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                     >
                       <span className="w-0 h-px group-hover:w-4 transition-all duration-300"
-                        style={{ background: "linear-gradient(90deg, #636B2F, #BAC095)" }} />
+                        style={{ background: "linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)))" }} />
                       {link.name}
                     </a>
                   ) : (
@@ -106,7 +106,7 @@ export default function Footer() {
                       className="group flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                     >
                       <span className="w-0 h-px group-hover:w-4 transition-all duration-300"
-                        style={{ background: "linear-gradient(90deg, #636B2F, #BAC095)" }} />
+                        style={{ background: "linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)))" }} />
                       {link.name}
                     </Link>
                   )}
@@ -136,7 +136,7 @@ export default function Footer() {
               <div className="flex items-center gap-1.5 flex-wrap">
                 {["Next.js", "TypeScript", "Framer Motion", "Tailwind"].map((tech) => (
                   <span key={tech} className="text-xs px-2 py-0.5 rounded-md font-medium"
-                    style={{ background: "rgba(99,107,47,0.15)", color: "#636B2F", border: "1px solid rgba(99,107,47,0.2)" }}>
+                    style={{ background: "var(--glow-primary)", color: "hsl(var(--primary))", border: "1px solid hsl(var(--primary)/0.2)" }}>
                     {tech}
                   </span>
                 ))}
@@ -168,8 +168,8 @@ export default function Footer() {
             whileTap={{ scale: 0.92 }}
             className="group w-10 h-10 rounded-2xl flex items-center justify-center transition-all duration-300"
             style={{
-              background: "linear-gradient(135deg, #636B2F, #BAC095)",
-              boxShadow: "0 0 15px rgba(99,107,47,0.25)",
+              background: "linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)))",
+              boxShadow: "0 0 15px var(--glow-primary)",
             }}
           >
             <ArrowUp className="w-4 h-4 text-white" />

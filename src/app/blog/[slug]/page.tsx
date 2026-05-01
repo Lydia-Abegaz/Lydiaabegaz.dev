@@ -14,7 +14,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return { title: "Post Not Found" };
   return {
-    title: `${post.title} | Lidia Abegaz`,
+    title: `${post.title} | Lidia Aliso`,
     description: post.excerpt,
   };
 }
