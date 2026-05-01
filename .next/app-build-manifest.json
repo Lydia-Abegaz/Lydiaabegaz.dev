@@ -1,0 +1,52 @@
+{
+  "pages": {
+    "/_not-found": [
+      "static/chunks/webpack-40a586cf9ba4ade2.js",
+      "static/chunks/fd9d1056-c23ba2eb07823f38.js",
+      "static/chunks/938-8787d258869b20b2.js",
+      "static/chunks/main-app-a3725666ad159ae0.js",
+      "static/chunks/app/_not-found-e7f6f1363e5bac0b.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-40a586cf9ba4ade2.js",
+      "static/chunks/fd9d1056-c23ba2eb07823f38.js",
+      "static/chunks/938-8787d258869b20b2.js",
+      "static/chunks/main-app-a3725666ad159ae0.js",
+      "static/css/073739b9129b042c.css",
+      "static/chunks/app/layout-7f48ed164915c267.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-40a586cf9ba4ade2.js",
+      "static/chunks/fd9d1056-c23ba2eb07823f38.js",
+      "static/chunks/938-8787d258869b20b2.js",
+      "static/chunks/main-app-a3725666ad159ae0.js",
+      "static/chunks/105-9d7cc79830211d9e.js",
+      "static/chunks/556-15e220d179936e4e.js",
+      "static/chunks/app/page-75e3f5ec8d0c6ae1.js"
+    ],
+    "/blog/page": [
+      "static/chunks/webpack-40a586cf9ba4ade2.js",
+      "static/chunks/fd9d1056-c23ba2eb07823f38.js",
+      "static/chunks/938-8787d258869b20b2.js",
+      "static/chunks/main-app-a3725666ad159ae0.js",
+      "static/chunks/105-9d7cc79830211d9e.js",
+      "static/chunks/app/blog/page-eb43a49aad486933.js"
+    ],
+    "/blog/[slug]/page": [
+      "static/chunks/webpack-40a586cf9ba4ade2.js",
+      "static/chunks/fd9d1056-c23ba2eb07823f38.js",
+      "static/chunks/938-8787d258869b20b2.js",
+      "static/chunks/main-app-a3725666ad159ae0.js",
+      "static/chunks/105-9d7cc79830211d9e.js",
+      "static/chunks/app/blog/[slug]/page-72bd476fc0ff9331.js"
+    ],
+    "/projects/[slug]/page": [
+      "static/chunks/webpack-40a586cf9ba4ade2.js",
+      "static/chunks/fd9d1056-c23ba2eb07823f38.js",
+      "static/chunks/938-8787d258869b20b2.js",
+      "static/chunks/main-app-a3725666ad159ae0.js",
+      "static/chunks/105-9d7cc79830211d9e.js",
+      "static/chunks/app/projects/[slug]/page-ce125cb2576186f6.js"
+    ]
+  }
+}

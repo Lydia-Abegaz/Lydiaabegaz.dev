@@ -1,5 +1,5 @@
 import { blogPosts } from "@/data/blog-posts";
-import BlogPostClient from "./post-client";
+import BlogPostClient from "./client";
 import type { Metadata } from "next";
 
 interface PageProps {
