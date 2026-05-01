@@ -75,7 +75,7 @@ export default function Services() {
                 I started my software journey from photography and visual design, which gives me a unique perspective on creating beautiful and functional digital experiences. As a Software Engineering student at AASTU, I specialize in full-stack development with a passion for blockchain technologies.
               </p>
               <p className="text-foreground/70 leading-relaxed">
-                I love turning complex problems into simple, beautiful, and intuitive solutions. When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open-source projects, or participating in hackathons.
+                I love turning complex problems into simple, beautiful, and intuitive solutions. When I&apos;m not coding, you&apos;ll find me exploring new technologies, learning new frameworks, or participating in hackathons.
               </p>
             </div>
           </motion.div>
